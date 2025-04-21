@@ -10,6 +10,9 @@ public class Combate {
         this.inimigo = inimigo;
     }
 
+    /**
+     * @param scanner
+     */
     public void iniciarBatalha(Scanner scanner) {
         while (jogador.estaVivo() && inimigo.estaVivo()) {
           
@@ -34,7 +37,7 @@ public class Combate {
 
       
             if (inimigo.estaVivo()) {
-                inimigo.atacar(Personagem.Personagem);
+                inimigo.ataqueEspecial(jogador);
                 System.out.println(inimigo.getNome() + " atacou!");
             }
 
