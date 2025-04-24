@@ -25,6 +25,10 @@ public class Inimigo {
     public boolean estaVivo() {
         return this.vida > 0;
     }
+    public void premiar(Personagem jogador) {
+        jogador.evoluir();
+        System.out.println(" Recompensa: " + jogador.getNome() + " aprendeu um novo ataque elemental!");
+    }
 
     public String getNome() { return nome; }
     public int getVida() { return vida; }

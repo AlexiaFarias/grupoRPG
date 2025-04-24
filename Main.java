@@ -14,6 +14,5 @@ public class Main {
 
         combate.iniciarBatalha(scanner);
 
-        System.out.println(" A batalha acabou. A natureza agradece sua coragem!");
     }
 }
